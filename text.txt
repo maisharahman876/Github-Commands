@@ -1,0 +1,6 @@
+Initializing github : git init
+Checking current status: git status
+(if "fatal: not a git repository (or any of the parent directories): .git", then git is not initialize and 
+do git init. 
+
+Adding files/ staging files before committing : git add --a or git add abc.txt
