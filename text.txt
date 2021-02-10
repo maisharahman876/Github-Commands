@@ -3,4 +3,6 @@ Checking current status: git status
 (if "fatal: not a git repository (or any of the parent directories): .git", then git is not initialize and 
 do git init. 
 
-Adding files/ staging files before committing : git add --a or git add abc.txt
+Adding files/ staging files before committing : git add --a (this will add all changes) or git add abc.txt
+Committing : git commit -m "comment"
+// before committing, we must add
