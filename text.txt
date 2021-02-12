@@ -32,4 +32,20 @@ Untracking file : git rm --cached test.txt
 Adding changes to previous commit : git commit --amend
 
 Unstaging any file : git restore --staged test.txt
-If we want to restore things like previous commit : git checkout -- test.txt
+If we want to restore things like previous commit : git checkout -- test.txt or git checkout -f
+
+Connecting things with your github account and creating repository : git remote add origin #git_link_of_that_repository
+
+pushing : git push -u origin master
+
+Creating alias : git config --global alias.st status(Here if we input 'st' it will mean 'status') or git config --global alias.unstaged 'restore --staged --'(if it is more
+than one word, use ' ')
+
+Creating new branch : git checkout -b #branch_name
+
+Switching to master/branch : git checkout master/#branch_name
+
+Checking all branches : git branch (the one with * is the current branch)
+
+ 
+
