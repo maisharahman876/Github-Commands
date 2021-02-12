@@ -1,8 +1,35 @@
 Initializing github : git init
 Checking current status: git status
 (if "fatal: not a git repository (or any of the parent directories): .git", then git is not initialize and 
-do git init. 
+do git init. if "working tree is clean", then there is nothing to be staged.)
 
-Adding files/ staging files before committing : git add --a (this will add all changes) or git add abc.txt
-Committing : git commit -m "comment"
+Adding files/ staging files before committing : git add --a (this will add all changes) or git add abc.txt or git add .(this will 
+add all files including .smthing)
+Committing : git commit -m "comment" or git commit -a -m "direct commit"
 // before committing, we must add
+
+deleting git : rm -rf .git(deleting full repository from git ie actually untracking) or git rm test.txt(just deleting that file)
+cloning : git clone #git_link
+
+Watching all history : git log
+Watching changes : git log -p or git log -p -#n(Here we can see last n commits) or git log --pretty=short/oneline/long (See all commits shortly or 
+in oneline or something)
+
+creating new file : touch test.txt
+
+so if we want to ignore something we have to create a ignore folder : touch .gitignore
+Now we have to put the files we want to ignore and in the .gitignore file we have to write : test.txt or *.txt(here 
+all text files will be ignored) or directory/( here we have a folder name directory and it will be ignored totally)
+
+Comparing staged and working area : git diff 
+Comparing with previous commit and staged area : git diff --staged
+
+Renaming : git mv from.txt renamed.txt
+
+Untracking file : git rm --cached test.txt
+(If we firstly used to track a file, but then we added that to gitignore and then we have to untrack that file because it was previously staged)
+
+Adding changes to previous commit : git commit --amend
+
+Unstaging any file : git restore --staged test.txt
+If we want to restore things like previous commit : git checkout -- test.txt
